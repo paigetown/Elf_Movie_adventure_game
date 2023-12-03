@@ -1,0 +1,97 @@
+{ 
+	"North Pole": {
+		"text":"Buddy the Elf is standing at the center of the North Pole.\nIt is a very cold, but that's just the way he likes it.",
+		"moves": {
+			"east":"Santa's Workshop",
+			"south":"7 Layers of the Candy Cane Forest"
+		}
+	},
+	"Santa's Workshop" : {
+		"text":"Buddy is hard at work in Santa's Workshop.\nOh No! He has just found out he wasn't born in the North Pole! His dad lives in NYC.",
+		"moves" : {
+			"west" : "North Pole",
+			"southwest":"7 Layers of the Candy Cane Forest"
+		},
+		"objects":[{
+			"name": "a map to New York",
+			"type": "special"
+		}]
+
+	},
+	"7 Layers of the Candy Cane Forest": {
+		"text":"Buddy is making the treacherous hike through the 7 Layers of the Candy Cane Forest.\nWatch out for falling candy canes!",
+		"moves": {
+			"north" : "North Pole",
+			"south" : "Sea of Twirly-Swirly Gumdrops",
+			"northeast" : "Santa's Workshop"
+		},
+		"objects" : [{
+			"name" : "a tasty candy cane",
+			"type" : "special"
+		}]
+	},
+	"Sea of Twirly-Swirly Gumdrops": {
+		"text":"Buddy is riding an iceberg on the Sea of Twirly-Swirly Gumdrops.\nCareful not to slide off.",
+		"moves": {
+			"north" : "7 Layers of the Candy Cane Forest",
+			"east" : "Lincoln Tunnel"
+
+		}	
+	},
+	"Lincoln Tunnel": {
+		"text":"Buddy has walk a long way through the Lincoln Tunnel.\nWelcome to New York!",
+		"moves":{
+			"west" : "Sea of Twirly-Swirly Gumdrops",
+			"east":"Empire State Building",
+			"southeast":"Gimbels",
+			"northeast":"Central Park"
+		}
+	},
+	"Empire State Building" : {
+		"text" : "Buddy's dad work at the Empire State Building!\nAre you taking the elevator?",
+		"moves" : {
+			"up" : "Greenway Press",
+			"down" : "Mail Room",
+			"west" : "Lincoln Tunnel",
+			"north" : "Hobbs' Apartment"
+		}
+	},
+	"Greenway Press" : {
+		"text" : "Buddy finally meets his dad at the Greenway Press!\nMr. Hobbs doesn't seem too happy...",
+		"moves" : {
+			"down" : "Empire State Building"
+		},
+		"objects" : [{
+			"name" : "a children's book published by Greenway Press",
+			"type" : "normal"
+		}]
+	},
+	"Mail Room" : {
+		"text" : "Buddy gets to work in the Mail Room.\nHe got fired the same day...",
+		"moves" : {
+			"up" : "Empire State Building"
+		},
+		"objects" : [{
+			"name" : "a random letter",
+			"type" : "normal"
+		}]
+	},
+	"Gimbels" : {
+		"text" : "Buddy walks into some place called Gimbels.\nIt looks just like the North Pole, but smaller.",
+		"moves" : {
+			"northwest" : "Lincoln Tunnel",
+			"northeast" : "Empire State Building"
+		}
+	},
+	"Central Park" : {
+		"text" : "Buddy walks through beautiful Central Park.\nLooks like there's some carolers.",
+		"moves" : {
+			"southwest" : "Lincoln Tunnel",
+			"northeast" : "Hobbs' Apartment"
+		},
+		"objects" : [{
+			"name" : "Santa's sleigh engine",
+			"type" : "special"
+		}]
+	}
+}
